@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+@font-face{
+    font-family: Montserrat-Font;
+    src: url(../Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family:droid-font ;
+    src: url(../droid-serif/DroidSerif-Regular.ttf);
+}
+@font-face {
+    font-family: h-Montserrat-Font;
+    src: url(../Montserrat/Montserrat-Bold.ttf);
+
+}
+@font-face {
+    font-family: Roboto ;
+    src: url(../Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+:root{
+    --orangeBg: rgb(254, 209, 54);
+    --buttonColor:rgb(241, 195, 28);
+    --grayBg: #f8f9fa;
+}
+/*Grouping home part and contact part*/
+.button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat-Font;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: var(--orangeBg);
+    padding: 1.25rem 2.5rem;
+    border-radius: 10px;
+    }
+    .button{
+        margin-top: 4rem;
+    }
+    .button:hover a{
+        background-color: var(--buttonColor);
+        transition: ease-out 100ms;
+    }
+    h2{
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-family:  h-Montserrat-Font;
+        text-transform: uppercase;
+     }
+     .top-p{    
+         color: #6c757d !important;
+        font-family:droid-font;
+        font-style: italic;
+    }
+   
+    h3{
+        font-family: h-Montserrat-Font;
+        text-transform: capitalize;
+        font-size: 24px;
+        margin-bottom: 10px;
+        }
+        .icons i{
+            color: white;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 30px;
+            background-color: rgb(52, 58, 64);
+            border-color: rgb(52, 58, 64);
+            padding-top: 12px;
+            margin-left: 12px;
+          }
+          .icons a{
+            text-decoration: none;
+        }
+    /*start of header page */
+    /*start of navbar*/
+.header{
+    overflow: hidden;
+    padding: 30px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+.header .logo{
+    float: left;
+    width: 50%;
+}
+.header .logo a{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.header .logo a img{
+    width: 35%;
+}
+.header .menu{
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+.header .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.header .menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 12px;
+    color: white;
+    font-family: Montserrat-Font;
+    font-size:16px;
+}
+.menu li a:hover{
+    color: var(--orangeBg) !important;
+}
+    /*end of navbar*/
+
+.home{
+    background-image: url(../images/header-bg.jpg);
+    height: 120vh;
+    background-size: cover;
+    background-position: 0px -70px;
+    position: relative;
+}
+.home-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    width: 100%;
+}
+.home-content .sub-heading{
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    font-family: droid-font;
+    text-transform: capitalize;
+}
+.home-content .reception-heading{
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: Montserrat-Font;
+    font-weight: 700;
+}
+
+/*end of home content*/
+/*end of header page*/
+
+/*start of services page*/
+.services{
+    text-align: center;
+    overflow: hidden;
+}
+.services {
+    margin:100px 0px;
+}
+.service-item{
+    float: left;
+    width: 33.33%;
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+.service-item .fa{
+    font-size: 4rem;
+    padding:30px 30px ;
+    border-radius: 50%;
+    background-color: var(--buttonColor) !important;
+    color: white;
+    margin-bottom: 20px;
+}
+.service-item .fa-lock{
+    padding:30px 40px  !important;
+}
+
+.p-item{
+    line-height: 1.7rem;
+    color: #6c757d !important;
+    font-family:droid-font;
+}
+/*end of services*/
+/*start of porfolio*/
+.portfolio{
+    text-align: center;
+    background-color: var(--grayBg) !important;
+    margin: 30px 0px 0px 40px;
+}
+.portfolio-items{
+    overflow: hidden;
+    margin-top: 50px ;
+}
+.portfolio h2{
+    padding-top: 80px;
+}
+.portfolio-item{
+    float: left;
+    width: 30.3%;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 0px 0px 30px 0px;
+}
+.portfolio-items img{
+width: 100%;
+height: 250px;
+}
+
+.portfolio-item p{
+    font-family:droid-font ;
+    font-style: italic;
+    color: #6c757d !important;}
+  
+    .porfolio-img{
+        position: relative;
+    }
+    .overlay{
+        background-color: rgba(254, 209, 54, 0.9);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top:0px;
+        opacity: 0;
+    }
+    .overlay .fa-plus{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 60px;
+        color: white;
+    }
+    .porfolio-img:hover .overlay {
+        opacity: 1;
+        cursor: pointer;
+        transition: ease-out 400ms;
+    }
+
+    /*end of portfolio*/
+    .about {
+        text-align: center;
+        margin: 90px 0px;
+    }
+    .about-item{
+        margin-top: 30px;
+    }
+    .Right-about p,.Left-about p{
+        color: #6c757d !important;
+        margin-top: 10px;
+        line-height: 1.6;
+        font-family: Roboto;
+    }
+    .date{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .Right-about,.Left-about {
+        width: 70%;
+        margin: auto;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    .about-item img{
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        border: 7px solid rgb(233, 236, 239)  ;
+        background-color: var(--orangeBg);
+    }
+    .Right-about-content{
+        text-align: right;
+        position: absolute;
+        width: 40%;
+        top:20px;
+        padding-right: 15px;
+    }
+    .Left-about-content{
+        text-align: left;
+        position: absolute;
+        width: 40%;
+        top:20px;
+        right: 0px;
+        padding-left: 15px;
+    }
+  .part-circle{
+        width: 150px;
+        height: 150px;
+        background-color:var(--orangeBg);
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        border: 7px solid rgb(233, 236, 239)  ;
+    }
+    .part-circle p{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 18px;
+        color: white;
+        font-family: Montserrat-Font ;
+        font-weight: bold;
+    }
+  /*end of about*/
+    
+  /*start of team part*/
+  .team{
+      text-align: center;
+      background-color:var(--grayBg) !important;
+      padding: 90px 0px;
+    }
+  .team-members{
+      overflow: auto;
+      margin: 80px auto ;
+  }
+  .team-member{
+      float: left;
+      width: 33.33%;
+  }
+  .team p{
+    font-family: Roboto;
+    color: rgb(108, 117, 125) !important;
+    margin-top: 5px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  .team-member img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    border:0.5rem solid rgba(0, 0, 0, 0.1) ;
+ }
+
+ 
+  /*end of team part*/
+/*start of links part*/
+
+.links-part{
+    overflow: auto;
+    margin: 60px 0px;
+}
+.link{
+    float: left;
+    width: 25%;
+}
+/*end of links part*/
+.contact{
+    text-align: center;
+    background-image: url(../images/map-image.png);
+    background-color: rgb(33, 37, 41);
+    height: 100vh;
+    padding-top: 90px;
+}
+.contact h2{
+    color: white;
+}
+.form-part{
+    overflow: hidden;
+    margin-top: 50px;
+}
+.contact .left-form{
+float: left;
+width: 45%;
+}
+.input-data{
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 1.25rem;
+}
+textarea{
+    height: 100%;
+    padding: 1.25rem;
+    min-height: 10rem;
+}
+.message-data{
+    width: 100%;
+    box-decoration-break: 1px solid rgb(206, 212, 218);
+    border-radius: 0.25rem;
+}
+.box{
+    float: left;
+    width: 45%;
+    border-radius: 0.25rem;
+    margin-left: 40px;
+}
+/* end of contact us */
+/*start of footer */
+.footer{
+    text-align: center;
+    margin: 20px 0px;
+}
+.footers-part{
+    overflow: hidden;
+}
+.footer-part{
+    float: left;
+    width: 33.33%;
+}
+.footer span {
+    font-size: 0.9rem;
+    font-family: Montserrat-Font;
+    color:rgb(33, 37, 41);
+}
+.footer .link-footer a{
+text-decoration: none;
+color: var(--orangeBg);
+margin-left: 15px;
+font-size: 14.4px;
+font-family: Montserrat-Font;
+}
+.footer .link-footer a:hover{
+    text-decoration: underline;
+}
